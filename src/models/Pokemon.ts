@@ -3,5 +3,8 @@ export type Pockemon = {
     name : string,
     level : number,
     isMale : boolean,
-    src : any
+    src : any,
+    onClickPokemon : any,
+    onModifyLevel : any,
+    onModifyName : any
   }

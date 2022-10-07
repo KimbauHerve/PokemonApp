@@ -8,7 +8,7 @@
  * @format
  */
 
-import React, {type PropsWithChildren, useState, useEffect} from 'react';
+import React, { type PropsWithChildren, useState, useEffect } from 'react';
 import {
   SafeAreaView,
   ScrollView,
@@ -18,26 +18,38 @@ import {
   useColorScheme,
   ActivityIndicator, FlatList,
   View,
+  TouchableOpacity,
 } from 'react-native';
 
 import ListeMovies from './src/views/ListeMovies';
 import Home from './src/views/Home';
+import Head from './src/views/Head';
 
 const App = () => {
- 
+
   return (
-    <ScrollView>
-    <View
-    style={{padding: 24,}}>
-      <Home />
-   
-  </View>
-  </ScrollView>
+
+    <View>
+      <Head />
+      
+        <Home />
+     
+
+
+    </View>
+
   );
 };
 
 const styles = StyleSheet.create({
- 
+  btnAdd: {
+    backgroundColor: 'red',
+    padding: 10,
+    position: 'absolute',
+    bottom: -150,
+    right: 20,
+    borderRadius: 100
+  }
 });
 
 export default App;
