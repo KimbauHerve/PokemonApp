@@ -24,18 +24,15 @@ import {
 import ListeMovies from './src/views/ListeMovies';
 import Home from './src/views/Home';
 import Head from './src/views/Head';
+import TestHome from './src/testView/TestHome';
 
 const App = () => {
 
   return (
 
-    <View>
-      <Head />
-      
-        <Home />
+    <View >
      
-
-
+     <Home />
     </View>
 
   );
